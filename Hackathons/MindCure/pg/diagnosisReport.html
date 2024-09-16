@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DiagnosisReport</title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $(".blackBlock").click(function() {
+            $(".blackBlock").fadeOut()});
+        $("button").click(function() {
+            location.href="magicCure.html";
+        });
+    });
+    </script>
+
+	<style type="text/css">
+        .mainHeight {
+        	width: 100%;
+        	height: 730px;
+            box-shadow: 2px 2px 5px #bbb;
+        }
+        .title {
+			width: 100%;
+			height:73.5px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+	    }
+        .titleSize {
+            text-align: center;
+			margin-top: 0;
+			margin-bottom: 0;
+        }
+        .blackBlock {
+        	position: absolute;
+        	top: auto;
+        	right: 0;
+        	bottom: auto;
+        	left: 0;
+        	margin: auto;
+        	width: 700px;
+        	height: 300px;
+        	background-color: black;
+        }
+        .hint {
+            position: relative;
+            top: auto;
+            right: 0;
+            bottom: auto;
+            left: 0;
+            margin: auto;
+            width: 700px;
+            text-align: center;
+        }
+        .b {
+            position: relative;
+            margin-top: 22%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class ="mainHeight">
+    	<div class="title">
+            <h1 class="titleSize">诊断报告</h1>
+        </div>
+
+        <div>
+            <p class="hint">根据科学实验结果，多数病人当得知自己的病情后会花费长时间在搜索上。出于考虑到更好的疗效，我们将封锁您的心理健康情况（当然我们尊重您的选择，如果需要查看请点击下方黑框） 其次我们团队向您保证，您的情绪问题将通过我们的系统快速缓解。</p>
+        </div><br><br>
+
+        <div class="blackBlock"></div>
+
+        <div class="midButton">
+        	<p class="b"><br>
+        	<button type="button" style="width:350px; height:150px">一键开启</button>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
